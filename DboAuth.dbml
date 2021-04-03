@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Db_auth" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=JUNIOR-PC\SQLEXPRESS;Initial Catalog=Db_auth;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Db_authConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.auth" Member="auths">
+    <Type Name="auth">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Mes" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" />
+      <Column Name="Dia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Hora" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="IP" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" />
+      <Column Name="Informacao" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
